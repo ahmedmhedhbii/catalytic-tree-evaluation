@@ -1,11 +1,11 @@
-# Tree Evaluation is in Space $\mathcal{O}(\log n \cdot \log \log n)$ Implementation
+# Tree Evaluation is in Space $\mathbb{O}(\log n \cdot \log \log n)$ Implementation
 
 Voici la première version de l'implémentation de l'algorithme dans la section 4 (la "version d'échauffement") qui ne fonctionne pas encore pour l'instant. Le code est en Python et sera expliqué (pas de manière détaillée pour l'instant mais plus tard).
 
 ## Fonctions et Explications
 
 ### La fonction `initialize_tree_and_catalyst()`
-Initialise une instance de $TreeEval_{k, h}$, les registres d'une manière aléatoire avec des valeurs du $GF(2 ^{\lceil \log ( 2 \lceil \log k \rceil + 2) \rceil})$ comme proposé dans le papier et aussi $\omega$, qui est une racine primitive de notre corps qui va être toujours $GF(2)$ (l'explication est dans ce lien).
+Initialise une instance de $TreeEval_{k, h}$, les registres d'une manière aléatoire avec des valeurs du $GF(2 ^{\lceil \log ( 2 \lceil \log k \rceil + 2) \rceil})$ comme proposé dans le papier et aussi $\omega$, qui est une racine primitive de notre corps qui va être toujours $GF(2)$. [Explication dans ce lien](#https://math.stackexchange.com/questions/4104767/is-x-always-a-primitive-element-of-textgf2m).
 
 ### La fonction `initialize_field(k)`
 Initialise le corps fini $GF(2 ^{\lceil \log ( 2 \lceil \log k \rceil + 2) \rceil})$
