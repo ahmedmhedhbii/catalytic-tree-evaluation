@@ -93,7 +93,7 @@ def recursive_clean_inverse(node, level, h):
         recursive_clean(right_child, level + 1, h)
 
         for i in range(log_k):
-            registers[node][i] -= q_u_i(registers[left_child], registers[right_child], tree[node], field, i)
+            registers[node][i] += q_u_i(registers[left_child], registers[right_child], tree[node], field, i)
 
         recursive_clean_inverse(left_child, level + 1, h)
         recursive_clean_inverse(right_child, level + 1, h)
@@ -112,11 +112,11 @@ def clean_computation(h):
 
 
 def initialize_tree_and_catalyst():
-    h = 0  # int(input("Enter tree height: "))
+    h = 1  # int(input("Enter tree height: "))
     k = 10  # int(input("Enter alphabet size: "))
     num_nodes = (1 << (h + 1)) - 1
 
-    tree_values = [9] * (1 << h) # to be defined
+    tree_values = [1] * (1 << h) # to be defined
     tree_functions = [[list(range(k)) for _ in range(k)] for _ in range((1 << h) - 1)]  # to be defined
     tree = tree_functions + tree_values
 
