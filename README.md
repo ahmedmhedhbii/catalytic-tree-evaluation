@@ -1,6 +1,6 @@
 # Tree Evaluation is in Space $\mathcal{O}(\log n \cdot \log \log n)$ Implementation
 
-Voici la première version de l'implémentation de l'algorithme dans la section 4 (la "version d'échauffement") qui ne fonctionne pas encore pour l'instant. Le code est en Python et sera expliqué (pas de manière détaillée pour l'instant mais plus tard).
+Voici la première version de l'implémentation de l'algorithme dans la section 4 (la "version d'échauffement"). Le code est en Python et sera expliqué (pas de manière détaillée pour l'instant mais plus tard).
 
 ## Fonctions et Explications
 
