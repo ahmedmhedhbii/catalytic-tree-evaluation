@@ -29,3 +29,5 @@ C'est pour faire le calcul pour le résultat final (la différence d'avant et ap
 - Les bits se lisent de gauche à droite par exemple $11_2 = 1011$ et non pas $1101$.
 - `f'{m:0{n}b}'[::-1]` est une chaîne de caractères qui donne le nombre binaire `m` de taille `n` (avec des zéros à gauche).
 - Le code n'est pas encore bien organisé (je vais faire ça plus tard), merci pour votre compréhension.
+
+Merci 7 Janvier !
